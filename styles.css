@@ -1,0 +1,117 @@
+/* estilo geral*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", system-ui;
+}
+
+body {
+  background-color: #F2DF80;
+  height: 100vh;
+}
+
+.topo{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+}
+
+.btn-start button{
+  background: none;
+  border: none;
+  padding: 0px;
+  cursor:pointer;
+  transition: .2s;
+}
+
+.btn-start button img{
+  width: 150px;
+}
+
+.btn-start button:hover{
+  transform: scale(1.10);
+}
+
+/* estilo do cabeçalho*/
+
+header {
+  padding: 10px 4%;
+  background: #168AAD;
+}
+
+header .topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+header a{
+  color: #168AAD;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+}
+
+header a:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+header nav ul{
+  list-style-type: none;
+}
+
+header nav ul li{
+  display: inline-block;
+  padding: 20px 30px;
+  background: #F2B705;
+  border-radius: 30px; 
+}
+
+/* estilo do conteudo*/
+section.conteudo{
+  padding: 80px 4%;
+}
+
+section.conteudo.flex{
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  
+}
+
+.conteudo h1{
+  color:#000;
+  font-size: 35px;
+  line-height: 40px;
+  text-shadow: 2px 2px 5px rgb(255 255 255);
+}
+
+.conteudo .texto p {
+  color: #000;
+  margin: 40px 0;
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.conteudo .imagem-conteudo img{
+  width: 60%;
+  margin-left: 20%;
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+  0%{
+    top: 0;
+  }
+  100%{
+    top: 30px;
+  }
+
+}
