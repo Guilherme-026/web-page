@@ -6,6 +6,10 @@
   font-family: "Press Start 2P", system-ui;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #F2DF80;
   height: 100vh;
